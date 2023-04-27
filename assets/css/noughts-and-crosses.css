@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+body {
+    background-color:lightsteelblue; 
+}
+
+/* Game styling */
+.game {
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: montserrat;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+
+/* Styling for the grid */
+
+.grid {
+    width: 238px;
+    background:#0096ff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+.box {
+    min-width: 75px;
+    min-height: 75px;
+    display: inline-block;
+    border: 2px solid #0096ff;;
+    background: white;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Button styling */
+
+button {
+    background-color:lightblue;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Red Hat Mono', monospace;
+    width: 150px;
+}
+
+button:active {
+    background: lightgreen;
+}
+
+/* Footer styling */
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 2em;
+}
+
+footer a {
+    color: blue;
+}
+
+/* Scoreboard styling */
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#c-count,
+#n-count {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Stop users clicking on boxes when disabled */
+
+.box.disabled {
+    pointer-events: none;
+}
+
+/* Back to home page button styling */
+
+.home {
+    padding: 10px;
+    font-size: 18px;
+    float:left;
+    font-family: 'Bebas Neue', cursive; 
+    border: solid black; 
+    background-color:lightblue;
+    border-radius: 10px;
+}
+
+.home:active {
+    background-color: lightgreen;
+}
+
+/* Media query for screens less than 600px in width */
+
+@media (max-width: 600px){
+    body h1 {
+        font-size: 24px;
+    }
+
+    .home {
+        font-size:15px;
+        padding:10px;
+    }
+}
